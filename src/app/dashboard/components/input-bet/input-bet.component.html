@@ -1,6 +1,6 @@
 <div class="col-12 container-selector-balls">
   <ng-container *ngFor="let ball of selectedBettingNumbers">
-    <span class="ballShape">{{ball}}</span>
+    <span class="ballShape" [style.backgroundColor]="colors[ball-1]">{{ball}}</span>
   </ng-container>
 </div>
 <div class="col-12">  
