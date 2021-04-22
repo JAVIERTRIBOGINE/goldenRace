@@ -11,7 +11,7 @@ import * as constants from 'src/app/core/config/const';
 export class BallSelectionComponent implements OnInit {
     @Input() panel = false;
     colors: string[] = constants.colors; 
-    toggle: boolean[] = constants.toggle;
+    public toggle: boolean[] = constants.toggle;
     balls: number[]= constants.balls;
     selectedNumbers$: Observable<number[]>;
     selectedNumbers: number[]=[];

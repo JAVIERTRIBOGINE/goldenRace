@@ -8,8 +8,8 @@ export class SelectionService {
   selection$: Subject<number[]> = new Subject<number[]>();
   random$: Subject<number> = new Subject<number>();
   amount$: Subject<number> = new Subject<number>();
+  public selection: number[]=[];
   constructor() { }
-  selection: number[]=[];
 
   public addSelection(selNumber:number) {
     if (!this.selection.includes(selNumber)){

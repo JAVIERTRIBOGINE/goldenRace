@@ -1,8 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { SelectionService } from 'src/app/core/services/selection.service';
 import { Observable } from 'rxjs';
-
-
+import * as constants from 'src/app/core/config/const';
 
 @Component({
   selector: 'app-input-bet',
@@ -10,6 +9,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./input-bet.component.scss']
 })
 export class InputBetComponent implements OnInit {
+  colors: string[] = constants.colors;
   selectedNumbers$: Observable<number[]> | undefined;
   randomNumber$: Observable<number> | undefined;
   selectedBettingNumbers: number[]=[];
