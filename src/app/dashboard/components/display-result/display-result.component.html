@@ -1,0 +1,13 @@
+<div class="card" *ngIf="panel">
+<img class="card-img-top" src="../../../../assets/img/bingo.jpeg">
+  <div class="card-body">
+    <h5 class="card-title">The ball is out! : <span class="ballShape" [style.backgroundColor]="colors[(betNumber)-1]">{{betNumber}}</span></h5>
+    <div class="col-lg-6 col-12 card-text" *ngIf="success">
+      <span>Great election!!!</span> <span>You earn {{amount}} € !!</span> 
+    </div>
+    
+    <div class="col-lg-6 col-12">
+      <button class="btn btn-primary" (click)="home()">Start again</button>
+    </div>
+  </div>
+</div>

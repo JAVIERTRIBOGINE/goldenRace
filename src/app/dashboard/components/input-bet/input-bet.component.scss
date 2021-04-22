@@ -1,0 +1,30 @@
+.ballShape {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid;
+    border-radius: 25px;
+    margin: 0 3px;
+}
+
+.ballShape-square {
+    display: inline-block;
+    padding: 2px 14px;
+    /* border: 1px solid; */
+    border-radius: 9px;
+    margin: 0 7px;
+    background-color: #e4e4e4   ;
+}
+
+.container-selector-balls {
+    height: 100px;
+}
+
+.custom-margin {
+    margin: 0px 15px;
+    padding: 2px 8px;
+}
+
+.button-container {
+    margin-top: 20px;
+    background-color: chartreuse i !important;
+}

@@ -1,0 +1,6 @@
+<div *ngIf="panel">
+  <ng-container *ngFor="let ball of balls">
+    <span class="ballShape" [style.background]="toggle[(ball)-1]? colors[(ball)-1]: 'white' " (click)="selectNumber(ball)">{{ball}}</span>
+  </ng-container>
+</div>
+

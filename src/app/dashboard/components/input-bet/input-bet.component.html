@@ -1,0 +1,22 @@
+<div class="col-12 container-selector-balls">
+  <ng-container *ngFor="let ball of selectedBettingNumbers">
+    <span class="ballShape">{{ball}}</span>
+  </ng-container>
+</div>
+<div class="col-12">  
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">{{selectedBettingNumbers.length}}</span>
+      </div>
+      <input type="number" [disabled]="validateBet" class="form-control" aria-label="Amount (to the nearest dollar)" (input)="whichAmount()" [(ngModel)]="amount">
+      <div class="input-group-append">
+        <span class="input-group-text">{{totalToBet}} €</span>
+        <input type="button" class="btn btn-primary" (click)="validate()" value="Validar" [disabled]="lower"> 
+  </div>
+  <div class="input-group button-container" *ngIf="lower">
+    <span>The amount per ball must be equal or  higher than 5 €</span>
+    </div>
+  <div class="input-group button-container">
+  <button type="button" class="btn btn-success btn-lg btn-block" [disabled]="!validateBet" (click)="bet()">Block level button</button>
+  </div>
+</div>

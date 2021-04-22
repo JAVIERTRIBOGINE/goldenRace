@@ -1,0 +1,29 @@
+
+<div class="container ">
+    <app-header></app-header>
+    <div class="row dash-container">
+        <div class="col-md-7 col-12 display-container">
+            <!-- <ng-container *ngIf="firstPanel; else secondPanel"> -->
+                <!-- <app-ball-selection *ngIf="firstPanel"></app-ball-selection > -->
+                <app-ball-selection [panel]="firstPanel"></app-ball-selection >
+            <!-- </ng-container> -->
+            <!-- <ng-template #secondPanel> -->
+                <!-- <app-display-result *ngIf="!firstPanel"></app-display-result > -->
+                <app-display-result [panel]="!firstPanel"></app-display-result >
+            <!-- </ng-template> -->
+        </div>
+        <div class="col-md-5 col-12 display-bet">
+            <!-- <app-input-bet></app-input-bet> -->
+            <app-input-bet (changePanel)="changePanel($event)"></app-input-bet>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>    
+    
+
+
+  
+  <!-- <div [ngbNavOutlet]="nav" class="mt-2"></div>
+  
+  <pre>Active: {{ active }}</pre> -->
+  
