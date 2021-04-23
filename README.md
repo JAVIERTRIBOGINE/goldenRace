@@ -25,7 +25,7 @@ typescript                      4.1.5
 <br>
 <h2>INSTALATION: </h2>
 
-1.- Download project (MASTER AND DEVELOP BRANCHES ARE ALIGNED)
+1.- Download project (MASTER AND DEVELOP BRANCHES ARE ALIGNED): git clone https://github.com/JAVIERTRIBOGINE/goldenRace
 
 2.- In the root of the project, execute next commands
 
