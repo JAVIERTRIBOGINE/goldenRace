@@ -9,10 +9,11 @@ import { InputBetComponent } from './components/input-bet/input-bet.component';
 import { DisplayResultComponent } from './components/display-result/display-result.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   imports: [
-    CommonModule, DashboardRoutingModule, NgbModule, FormsModule
+    CommonModule, DashboardRoutingModule, NgbModule, FormsModule, FontAwesomeModule
   ],
   declarations: [DashboardComponent, HeaderComponent, FooterComponent, BallSelectionComponent, InputBetComponent, DisplayResultComponent]
 })

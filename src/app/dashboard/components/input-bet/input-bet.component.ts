@@ -9,7 +9,8 @@ import * as constants from 'src/app/core/config/const';
   styleUrls: ['./input-bet.component.scss']
 })
 export class InputBetComponent implements OnInit {
-  colors: string[] = constants.colors;
+  colored = constants.colors;
+  // colors: string[] = constants.colors;
   selectedNumbers$: Observable<number[]> | undefined;
   randomNumber$: Observable<number> | undefined;
   selectedBettingNumbers: number[]=[];

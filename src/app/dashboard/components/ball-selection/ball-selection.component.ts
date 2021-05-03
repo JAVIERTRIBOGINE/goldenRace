@@ -2,6 +2,8 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SelectionService } from 'src/app/core/services/selection.service';
 import * as constants from 'src/app/core/config/const';
+// import { faFilm, faQuran } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-ball-selection',
@@ -9,8 +11,9 @@ import * as constants from 'src/app/core/config/const';
   styleUrls: ['./ball-selection.component.scss']
 })
 export class BallSelectionComponent implements OnInit {
+    colored=constants.colors;
     @Input() panel = false;
-    colors: string[] = constants.colors; 
+    // colors: string[] = constants.colors; 
     public toggle: boolean[] = constants.toggle;
     balls: number[]= constants.balls;
     selectedNumbers$: Observable<number[]>;

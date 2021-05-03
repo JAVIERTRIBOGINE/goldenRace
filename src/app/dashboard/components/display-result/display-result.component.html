@@ -1,7 +1,7 @@
 <div class="card" *ngIf="panel">
 <img class="card-img-top" src="../../../../assets/img/bingo.jpeg">
   <div class="card-body">
-    <h5 class="card-title">The ball is out! : <span class="ballShape" [style.backgroundColor]="colors[(betNumber)-1]">{{betNumber}}</span></h5>
+    <!-- <h5 class="card-title">The ball is out! : <span class="ballShape" [style.backgroundColor]="colors[(betNumber)-1]">{{betNumber}}</span></h5> -->
     <ng-container *ngIf="success; else noSuccess">
       <div class="col-12 card-text">
         <h3>Great election!!! You won <span class="badge badge-secondary green">{{amount * 1.5}} € </span>!!</h3>

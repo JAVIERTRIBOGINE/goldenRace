@@ -1,6 +1,8 @@
 <div *ngIf="panel">
   <ng-container *ngFor="let ball of balls">
-    <span class="ballShape" [style.background]="toggle[(ball)-1]? colors[(ball)-1]: 'white' " (click)="selectNumber(ball)">{{ball}}</span>
+    <!-- <span class="ballShape" [style.background]="toggle[(ball)-1]? colors[(ball)-1]: 'white' " (click)="selectNumber(ball)">{{ball}}</span> -->
+    <span class="ballShape"><fa-icon [icon]="colored[(ball)-1]"></fa-icon> </span>
   </ng-container>
 </div>
 
+<!-- <span class="ballShape"><fa-icon [icon]="icons[1]"></fa-icon> </span> -->

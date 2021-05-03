@@ -12,7 +12,7 @@ import { BallSelectionComponent } from '../ball-selection/ball-selection.compone
 export class DisplayResultComponent implements OnInit {
   @ViewChild("ballSelection", {static: false}) ballSelection: BallSelectionComponent;
   @Input() panel = false;
-  colors: string[]= constants.colors;
+  // colors: string[]= constants.colors;
   randomNumber$: Observable<number>;
   amount$: Observable<number>;
   selectedNumbers$: Observable<number[]>;
